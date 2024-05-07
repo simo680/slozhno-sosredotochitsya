@@ -4,5 +4,14 @@
 */
 
 :root {
-  
+  --accent-color: #ff0070;
+  --heading-color: #db00ff;
+  --heading-shadow: #ff0070;
+  --title-head-color: #ff0070;
+  --title-color: #000028;
+  --text-color: #f1b2ce;
+  --bg-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
+  --mobile-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --tablet-and-desktop-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
