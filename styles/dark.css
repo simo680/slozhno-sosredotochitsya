@@ -10,6 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #ff0070;
+  --rec-color: #ff0070;
   --bg-line: #ff0070;
   --title-text-color: #ff0070;
   --heading-color: #db00ff;
@@ -24,6 +25,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --accent-color: #ff0070;
+    --rec-color: #ff0070;
     --bg-line: #ff0070;
     --title-text-color: #FF0070
     --heading-color: #db00ff;
