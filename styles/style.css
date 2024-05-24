@@ -214,7 +214,7 @@
   .header__text {
     justify-self: end;
     max-width: 491px;
-    margin-block-start: 20px;
+    margin-block-start: 13px;
   }
 }
 
@@ -229,14 +229,26 @@
   margin-block-end: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .article__title {
-    margin-block-end: 20px;
-  }
+.article__title_photo {
+  margin-block-end: 18px;
+}
+
+.article__title_five {
+  margin-block-end: 20px;
 }
 
 .article__head {
   font-weight: 400;
+}
+
+.article__text {
+  line-height: 23.4px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.article__text_mar {
+  margin-block-end: 19px;
 }
 
 .section {
@@ -244,29 +256,78 @@
   margin-block-end: 80px;
 }
 
-@media screen and (min-width: 768px){
-  .section {
-    display: grid;
-  }
-  .section__title {
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
-  
-  .article {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-}
-
-
 .section__title {
-  margin: 50px 0 20px 0;
+  width: 355px;
   color: var(--title-head-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
 
+@media screen and (min-width: 768px) {
+  .section__title__what {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section__title__what {
+    grid-column: 1 / 4;
+    grid-row: auto;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .section__title {
+    width: 236px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section__title {
+    width: 314px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section__why {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+  }
+
+  .section__what {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .section__how {
+    display: grid;
+    grid-template-columns: 1fr 472px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section__why {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+  }
+
+  .section__what {
+    display: grid;
+    grid-template-columns: 315px 315px;
+    gap: 20px;
+  }
+
+  .section__how {
+    display: grid;
+    grid-template-columns: 1fr 647px;
+  }
 }
 
 .section__pic {
@@ -359,7 +420,7 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer__title {
     font-size: var(--tablet-and-desktop-font-size);
   }
