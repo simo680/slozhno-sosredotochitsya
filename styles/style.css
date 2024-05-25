@@ -127,11 +127,11 @@
   height: 26px;
   border: 1px solid transparent;
   padding: 0px 13px;
+  color: var(--title-head-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
   background-color: transparent;
-  color: var(--title-head-color);
   cursor: pointer;
 }
 
@@ -146,7 +146,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border: 1px solid var(--title-head-color);
+  border-bottom: 1px solid var(--title-head-color);
   outline: none;
 }
 
@@ -244,10 +244,10 @@
 }
 
 .article__text {
-  line-height: 23.4px;
+  margin-block-end: 20px;
   font-weight: 400;
   font-size: 18px;
-  margin-block-end: 20px;
+  line-height: 23.4px;
 }
 
 @media screen and (min-width: 768px) {
@@ -261,24 +261,24 @@
 }
 
 .section {
-  padding: 0 10px 0 10px;
   margin-block-end: 50px;
+  padding: 0 10px 0 10px;
 }
 
 @media screen and (min-width: 768px) {
   .section {
-    padding: 0 20px 0 20px;
     margin-block-end: 80px;
+    padding: 0 20px 0 20px;
   }
 }
 
 .section__title {
   max-width: 355px;
+  margin-block-end: 20px;
   color: var(--title-head-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  margin-block-end: 20px;
 }
 
 @media screen and (min-width: 768px) {
